@@ -1,0 +1,206 @@
+.card {
+  box-sizing: border-box;
+  /* position: relative; */
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 284px;
+  height: 466px;
+  background: #ffffff;
+  border: 1px solid #e1ecfc;
+
+  border-radius: 10px 10px;
+}
+.image {
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 294.1px;
+  height: 292px;
+  border-radius: 10px 10px 0px 0px;
+}
+.content {
+  position: relative;
+}
+.title {
+  width: 225px;
+  height: 23px;
+  font-family: "CeraProBlack";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 23px;
+  color: #03314b;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* position: relative;
+  left: 1%;
+  right: 15.14%;
+  top: 66.52%;
+  bottom: 28.54%;
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.63px;
+  color: #03314b; */
+
+  /* width: 225px;
+  height: 23px;
+  top: 310px;
+  left: 16px; */
+}
+
+.author {
+  position: relative;
+  left: 1%;
+  right: 60.92%;
+  top: 74.89%;
+  bottom: 20.82%;
+
+  /* Body 1 */
+
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Text/low_emphasis */
+
+  color: #6d787e;
+}
+.icon {
+  position: relative;
+  height: 1px;
+  width: 10px;
+  /* left: 8.33%;
+  right: 8.33%;
+  top: 10%;
+  bottom: 5%; */
+}
+.stat {
+  position: relative;
+  /* left: 14.08%;
+  right: 52.11%;
+  top: 82.83%;
+  bottom: 13.3%; */
+
+  /* Caption 3 */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* Text/low_emphasis */
+
+  color: #6d787e;
+}
+
+/* .btn-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+/* padding-top: 40px; */
+/* padding: 14px 0px 0px 0px; */
+/* gap: 8px; */
+
+/* position: absolute; */
+/* width: 284px; */
+/* width: 100%; */
+/* height: 54px;
+  left: 0px;
+  top: 4px; */
+/* e1ecfc */
+/* border: 1px solid #e1ecfc;
+  border-radius: 0px 0px 8px 8px; */
+
+/* } */
+/* .btn-box:hover {
+  background-color: #0365f2;
+  color: #ffffff;
+} */
+.btn-box {
+  width: 103px;
+  height: 20px;
+
+  /* Body 1 */
+
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Blue */
+
+  color: #0365f2;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* padding: 14px 24px; */
+  gap: 8px;
+
+  position: absolute;
+  width: 100%;
+  height: 52px;
+  left: 0px;
+  top: 414px;
+
+  /* beta/secondary/500 */
+
+  /* background: #0365f2; */
+  /* Grey/300 */
+
+  border: 1px solid #e1ecfc;
+  border-radius: 10px 10px 0px 0px;
+  /* border-bottom: 12px solid rgb(120, 191, 205); */
+}
+
+.btn-box {
+  width: 300px;
+  height: 45px;
+  right: 10px;
+  /* Body 1 */
+
+  font-family: "Cera Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Blue */
+
+  /* color: #0365f2; */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
