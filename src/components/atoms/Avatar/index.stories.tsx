@@ -1,21 +1,14 @@
-// Button.stories.ts|tsx
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import CustomAvatar from './index';
 
-import React from 'react';
+export default{
+    title:'atoms/Avatar',
+    component:CustomAvatar
+}as ComponentMeta<typeof CustomAvatar>
 
-import { ComponentMeta,ComponentStory } from '@storybook/react';
+const Template:ComponentStory<typeof CustomAvatar> = (args) => <CustomAvatar  {...args}/>;
 
-import Index from './index'
-
-export default {
-  
-  title: 'atoms/avatar',
-  component: Index,
-} as ComponentMeta<typeof Index>;
-
-
-const Template:ComponentStory<typeof Index> = (args) => <Index  {...args}/>;
-
-
-export const A = Template.bind({});
-A.args = {text:"A"}
-
+export const loginAvatar = Template.bind({});
+loginAvatar.args={
+    children:'A'
+}

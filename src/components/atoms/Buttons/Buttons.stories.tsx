@@ -1,4 +1,5 @@
 import Buttons from "./Buttons";
+import { customStyles } from "../../../theme/mainTheme";
 
 export default {
   title: "atoms/Buttons",
@@ -6,10 +7,13 @@ export default {
 };
 
 export const buttons = () => {
+  const classes = customStyles();
   return (
-    <Buttons variant="outlined">
+    <Buttons
+      variant="outlined"
+      className={`${classes.buttonstyle} ${classes.readNowButton}`}
+    >
       Read now
     </Buttons>
   );
 };
-

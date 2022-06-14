@@ -5,5 +5,4 @@ const Buttons = ({ children, ...rest }: ButtonProps) => {
   return <Button {...rest}>{children}</Button>;
 };
 
-export default Buttons
-
+export default Buttons;

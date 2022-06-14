@@ -1,16 +1,13 @@
 import React from 'react'
 import { Avatar } from '@mui/material';
 
-
-
-interface letter{
-  text:string
+interface AvatarProps{
+    children:React.ReactNode
 }
-
-const index = (props:letter) => {
+const index = (props:AvatarProps) => {
   return (
     <Avatar sx={{width:'40px', height:'40px',bgcolor:'#69A6E3'}}>
-        {props.text}
+        {props.children}
     </Avatar>
   )
 }
