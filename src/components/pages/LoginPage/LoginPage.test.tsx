@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import LoginPage from "./LoginPage";
 import React, { ReactNode } from "react";
 import "@testing-library/jest-dom";
-import { Auth0Provider } from "@auth0/auth0-react";
+// import { Auth0Provider } from "@auth0/auth0-react";
 
 const MockLoginPage = () => {
   return <LoginPage />;

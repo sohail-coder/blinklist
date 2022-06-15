@@ -17,9 +17,6 @@ interface BookInfoProps {
 const Index = (props: BookInfoProps) => {
   const classes = customStyles();
   const [click, setClicked] = useState<boolean>();
-  // Note: If props are used to set initial state then use useEffect
-  //Here you have to add useEffect if you want to update the state on props change, which will listen to prop change & will update the state value accordingly
-  // refer - https://stackoverflow.com/questions/58818727/react-usestate-not-setting-initial-value
 
   useEffect(() => {
     setClicked(props.finish);
