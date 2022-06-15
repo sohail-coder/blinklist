@@ -12,80 +12,37 @@ import { customStyles } from "../../../theme/mainTheme";
 import CardGrid from "../../organisms/CardsGrid";
 import { Box } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Index = () => {
   const classes = customStyles();
   const navigate = useNavigate();
 
-  const [trending, setTrending] = useState([
-    {
-      id: 10,
-      imgsrc: "/1.png",
-      bookName: "Being Boss",
-      authorName: "Kathleen Shannon and Emily...",
-      time: "13-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-      finished: true,
-    },
-    {
-      id: 11,
-      imgsrc: "/BookCovers/beyondentrepreneurship.png",
-      bookName: "Beyond Entrepreneurship",
-      authorName: "Jim Collins & Bill Lazier",
-      time: "13-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-      finished: false,
-    },
-  ]);
+  const [trending, setTrending] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:8000/trendingblinks").then((res) => {
+      setTrending(res.data);
+    });
+  }, []);
 
-  const [justAdded, setJustAdded] = useState([
-    {
-      id: 7,
-      imgsrc: "/BookCovers/thelonelycentury.png",
-      bookName: "The Lonely Century",
-      authorName: "Noreena Hertz",
-      time: "15-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-      finished: true,
-    },
-    {
-      id: 8,
-      imgsrc: "/BookCovers/eatbetterfeelbetter.png",
-      bookName: "Eat Better, Feel Better",
-      authorName: "Giada De Laurentiis",
-      time: "13-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-      finished: true,
-    },
-  ]);
+  const [justAdded, setJustAdded] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:8000/justadded").then((res) => {
+      setJustAdded(res.data);
+    });
+  }, []);
 
-  const [featured, setFeatured] = useState([
-    {
-      id: 1,
-      imgsrc: "/BookCovers/bringyourhumantowork.png",
-      bookName: "Bring Your Human To Work",
-      authorName: "Eric Keswin",
-      time: "13-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-      finished: false,
-    },
-  ]);
+  const [featured, setFeatured] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:8000/featured").then((res) => {
+      setFeatured(res.data);
+    });
+  }, []);
 
   const handleClick = (id: number) => {
     console.log(id);
     navigate(`/bookDetailPage/${id}`);
   };
-
   return (
     <Template1
       Header={<Header />}

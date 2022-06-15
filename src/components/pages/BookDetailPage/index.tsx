@@ -8,6 +8,7 @@ import { Box, Tab } from "@mui/material";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import CustomTypo from "../../atoms/CustomTypo";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 
 const Index = () => {
   const classes = customStyles();
@@ -19,19 +20,15 @@ const Index = () => {
 
   const { id } = useParams();
   console.log(`params ${id}`);
-  const [books, setBooks] = useState([
-    {
-      id: 1,
-      finished: true,
-      imgsrc: "/BookCovers/bringyourhumantowork.png",
-      bookName: "Bring Your Human To Work",
-      authorName: "Eric Keswin",
-      time: "13-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-    },
-  ] as any);
+  const [books, setBooks] = useState([] as any);
+
+  useEffect(() => {
+    axios.get(`http://localhost:8000/booklist/${id}`).then((res) => {
+      setBooks(res.data);
+      console.log(res.data);
+      console.log(books);
+    });
+  }, []);
 
   return (
     <Template

@@ -6,6 +6,8 @@ import FunctionalGrid, { BookInfo } from "../../organisms/FunctionalGrid";
 import CustomTypo from "../../atoms/CustomTypo";
 import { customStyles } from "../../../theme/mainTheme";
 
+import axios from "axios";
+
 import { Box, Tab } from "@mui/material";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 
@@ -17,41 +19,18 @@ const Index = () => {
     setValue(newValue);
   };
 
-  // const fetchRecords = () => {
-  //   axios.get("http://localhost:3001/booklist").then((res) => {
-  //     const newBooks = res.data;
-  //     setBooks(newBooks);
-  //     console.log(books);
-  //   });
-  // };
+  const fetchRecords = () => {
+    axios.get("http://localhost:3001/booklist").then((res) => {
+      const newBooks = res.data;
+      setBooks(newBooks);
+      console.log(books);
+    });
+  };
 
-  const [books, setBooks] = useState<BookInfo[]>([
-    {
-      id: 1,
-      finished: true,
-      imgsrc: "/BookCovers/bringyourhumantowork.png",
-      bookName: "Bring Your Human To Work",
-      authorName: "Eric Keswin",
-      time: "13-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-    },
-    {
-      id: 2,
-      finished: false,
-      imgsrc: "/BookCovers/employee_to_entrepreneur.jpg",
-      bookName: "Employee to Entrepreneur",
-      authorName: "Steve Glaveski",
-      time: "15-minute read",
-      nReads: "1.9k reads",
-      icon1: "Image/Time.png",
-      icon2: "Image/Person.png",
-    },
-  ]);
-  // useEffect(() => {
-  //   fetchRecords();
-  // }, []);
+  const [books, setBooks] = useState<BookInfo[]>([]);
+  useEffect(() => {
+    fetchRecords();
+  }, []);
 
   return (
     <Template
@@ -90,10 +69,16 @@ const Index = () => {
                 </TabList>
               </Box>
               <TabPanel value="1" sx={{ mt: "25px", p: "0" }}>
-                <FunctionalGrid books={books.filter((x) => !x.finished)} />
+                <FunctionalGrid
+                  fetchRecords={fetchRecords}
+                  books={books.filter((x) => !x.finished)}
+                />
               </TabPanel>
               <TabPanel value="2" sx={{ mt: "25px", p: "0" }}>
-                <FunctionalGrid books={books.filter((x) => x.finished)} />
+                <FunctionalGrid
+                  fetchRecords={fetchRecords}
+                  books={books.filter((x) => x.finished)}
+                />
               </TabPanel>
             </TabContext>
           </Box>

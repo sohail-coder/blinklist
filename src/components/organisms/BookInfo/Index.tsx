@@ -6,6 +6,7 @@ import IconWithText from "../../molecules/IconWithText/index";
 import Time from "../../../assets/timer.jpg";
 import Buttons from "../../atoms/Buttons/Buttons";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import axios from "axios";
 
 interface BookInfoProps {
   imgPath: string;
@@ -23,7 +24,13 @@ const Index = (props: BookInfoProps) => {
   }, [props.finish]);
 
   const handleClick = async () => {
-    alert("fetching");
+    const response1 = await axios.patch(
+      `http://localhost:8000/booklist/${props.id}`,
+      {
+        finished: !click,
+      }
+    );
+    setClicked(response1.data.finished);
   };
 
   return (
