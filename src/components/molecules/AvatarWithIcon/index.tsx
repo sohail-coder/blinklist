@@ -22,7 +22,7 @@ const Index = (props: Props) => {
       }}
       data-testid="avatarLogin"
     >
-      <CustomAvatar children="A" />
+      <CustomAvatar children="SK" />
       {props.logClick ? (
         <KeyboardArrowDownIcon
           sx={{ color: "#042330", width: "20px", height: "20px" }}

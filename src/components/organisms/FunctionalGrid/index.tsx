@@ -12,6 +12,7 @@ export interface BookInfo {
   icon1: string;
   icon2: string;
   finished: boolean;
+  cat: string;
 }
 
 interface FunctionalGridProps {
@@ -21,9 +22,12 @@ interface FunctionalGridProps {
 
 const Index = ({ books, fetchRecords }: FunctionalGridProps) => {
   const handleClick = async (id: number, finish: boolean) => {
-    const response1 = await axios.patch(`http://localhost:8000/booklist/`, {
-      finished: !finish,
-    });
+    const response1 = await axios.patch(
+      `http://localhost:8000/booklist/${id}`,
+      {
+        finished: !finish,
+      }
+    );
     console.log(response1.data);
     if (response1.data) {
       fetchRecords();

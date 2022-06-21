@@ -19,15 +19,31 @@ const Index = () => {
   };
 
   const { id } = useParams();
-  console.log(`params ${id}`);
+  // const data = id?.split("+");
+  // console.log(data[0]);
+  // console.log(data[1]);
+
+  const params: any = id?.split("+");
   const [books, setBooks] = useState([] as any);
+  const [cat, setCat] = useState("");
+
+  const addData = () => {
+    axios.get(`http://localhost:8000/${params[0]}/${params[1]}`).then((res) => {
+      setBooks(res.data);
+      setCat(res.data.cat);
+      // console.log(res.data.cat);
+    });
+  };
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/booklist/${id}`).then((res) => {
-      setBooks(res.data);
-      console.log(res.data);
-      console.log(books);
-    });
+    // axios.get(`http://localhost:8000/booklist/${id}`).then((res) => {
+    //   setBooks(res.data);
+    //   console.log(res.data);
+    //   console.log(books);
+    // });
+    addData();
+    // addData({books.cat});
+    // console.log({ books });
   }, []);
 
   return (
@@ -42,6 +58,7 @@ const Index = () => {
             authorName={books.authorName}
             finish={books.finished}
             id={books.id}
+            cat={cat}
           />
           <Box mt={"60px"}>
             <TabContext value={value}>

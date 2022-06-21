@@ -20,7 +20,7 @@ const Index = () => {
   };
 
   const fetchRecords = () => {
-    axios.get("http://localhost:3001/booklist").then((res) => {
+    axios.get("http://localhost:8000/booklist").then((res) => {
       const newBooks = res.data;
       setBooks(newBooks);
       console.log(books);

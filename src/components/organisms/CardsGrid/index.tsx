@@ -4,7 +4,10 @@ import AddLibCard from "../../molecules/Cards/AddLibCard";
 import { Grid } from "@mui/material";
 
 interface CardObjProps {
-  handleClick: ((id: number, finish: boolean) => void) | ((id: number) => void);
+  handleClick:
+    | ((id: number, finish: boolean) => void)
+    // | ((id: number, cat: string) => void)
+    | ((id: number, finish: boolean, cat: string) => void);
   addtoLib: boolean;
   details: {
     id: number;
@@ -16,6 +19,7 @@ interface CardObjProps {
     icon1: string;
     icon2: string;
     finished: boolean;
+    cat: string;
   }[];
 }
 
@@ -24,7 +28,7 @@ const Index = (props: CardObjProps) => {
     <Grid container spacing={"29px"} data-testid="Card-Grid">
       {props.details.map((cardObj, index) => {
         return (
-          <Grid item key={index}>
+          <Grid item key={index} lg={4}>
             {props.addtoLib ? (
               <AddLibCard
                 handleClick={props.handleClick}

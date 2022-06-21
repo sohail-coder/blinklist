@@ -14,6 +14,7 @@ interface BookInfoProps {
   bookName: string;
   finish: boolean;
   id: number;
+  cat: string;
 }
 const Index = (props: BookInfoProps) => {
   const classes = customStyles();
@@ -25,12 +26,16 @@ const Index = (props: BookInfoProps) => {
 
   const handleClick = async () => {
     const response1 = await axios.patch(
-      `http://localhost:8000/booklist/${props.id}`,
+      `http://localhost:8000/${props.cat}/${props.id}`,
       {
         finished: !click,
       }
     );
-    setClicked(response1.data.finished);
+    const res = await axios.post(
+      `http://localhost:8000/booklist/`,
+      response1.data
+    );
+    setClicked(res.data.finished);
   };
 
   return (

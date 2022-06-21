@@ -9,9 +9,11 @@ import { customStyles } from "../../../../theme/mainTheme";
 import IconWithText from "../../IconWithText";
 import Buttons from "../../../atoms/Buttons/Buttons";
 import { BookInfo } from "../../../organisms/FunctionalGrid";
+import { StringMappingType } from "typescript";
 
 export interface CardsProps extends BookInfo {
-  handleClick: (id: number, finish: boolean) => void;
+  // cat: string;
+  handleClick: (id: number, finish: boolean, cat: string) => void;
 }
 
 const index = (props: CardsProps) => {
@@ -72,7 +74,9 @@ const index = (props: CardsProps) => {
           {props.finished ? (
             <Buttons
               variant="text"
-              onClick={() => props.handleClick(props.id, props.finished)}
+              onClick={() =>
+                props.handleClick(props.id, props.finished, props.cat)
+              }
             >
               <CustomTypo
                 variant="body1"
@@ -84,13 +88,15 @@ const index = (props: CardsProps) => {
           ) : (
             <Buttons
               variant="text"
-              onClick={() => props.handleClick(props.id, props.finished)}
+              onClick={() =>
+                props.handleClick(props.id, props.finished, props.cat)
+              }
               role="Finished-button"
             >
               <CustomTypo
                 variant="body1"
                 component="div"
-                children="finished"
+                children="Finished"
                 className={classes.finished}
               />
             </Buttons>

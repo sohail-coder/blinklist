@@ -18,6 +18,7 @@ export interface CardsProps {
   nReads: string;
   icon1: string;
   icon2: string;
+  cat: string;
 }
 
 const index = (props: CardsProps) => {
@@ -65,7 +66,9 @@ const index = (props: CardsProps) => {
       </CardContent>
 
       <CardActions sx={{ padding: "0px" }}>
-        <AddToLibrary handleClick={() => props.handleClick(props.id)} />
+        <AddToLibrary
+          handleClick={() => props.handleClick(props.id, false, props.cat)}
+        />
       </CardActions>
     </Card>
   );

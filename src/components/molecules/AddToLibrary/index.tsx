@@ -1,4 +1,3 @@
-import React from "react";
 import Buttons from "../../atoms/Buttons/Buttons";
 import AddIcon from "@mui/icons-material/Add";
 import { customStyles } from "../../../theme/mainTheme";

@@ -39,9 +39,11 @@ const Index = () => {
     });
   }, []);
 
-  const handleClick = (id: number) => {
+  const handleClick = (id: number, finished: boolean, cat: string) => {
     console.log(id);
-    navigate(`/bookDetailPage/${id}`);
+    console.log(cat);
+
+    navigate(`/bookDetailPage/${cat}+${id}`);
   };
   return (
     <Template1
@@ -77,7 +79,15 @@ const Index = () => {
             />
           </Box>
 
-          <Box sx={{ display: "flex", flexDirection: "column", mb: 10 }}>
+          <Box
+            sx={{
+              display: "flex",
+
+              flexDirection: "column",
+              mb: 10,
+            }}
+            style={{ paddingTop: "15px", fontFamily: "Cera Pro" }}
+          >
             <CustomTypo
               variant="heading3"
               component="div"
@@ -88,7 +98,10 @@ const Index = () => {
             <CardGrid addtoLib details={trending} handleClick={handleClick} />
           </Box>
 
-          <Box sx={{ display: "flex", flexDirection: "column", mb: 10 }}>
+          <Box
+            sx={{ display: "flex", flexDirection: "column", mb: 10 }}
+            style={{ paddingTop: "15px", fontFamily: "Cera Pro" }}
+          >
             <CustomTypo
               variant="heading3"
               component="div"
@@ -99,7 +112,7 @@ const Index = () => {
             <CardGrid addtoLib details={justAdded} handleClick={handleClick} />
           </Box>
 
-          <Box>
+          <Box style={{ paddingTop: "15px", fontFamily: "Cera Pro" }}>
             <CustomTypo
               variant="heading3"
               component="div"

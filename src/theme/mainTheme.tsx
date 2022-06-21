@@ -44,9 +44,26 @@ const customTheme = createTheme({
       fontWeight: 700,
     },
     heading3: {
-      fontSize: "24px",
-      lineHeight: "30.17px",
+      width: "250px",
+      height: "30px",
+
+      /* Heading 3 */
+
+      fontFamily: "Cera Pro",
+      fontStyle: "normal",
       fontWeight: 700,
+      fontSize: "24px",
+      lineHeight: "30px",
+
+      /* Text/high_emphasis */
+
+      color: "#03314B",
+
+      /* Inside auto layout */
+
+      flex: "none",
+      order: 0,
+      flexGrow: 0,
     },
     subtitle1: {
       fontWeight: 500,
