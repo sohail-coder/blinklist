@@ -7,9 +7,9 @@ export default {
 };
 
 export const card = () => {
-  // const classes=customStyles();
   return (
     <BookInfo
+      cat="TrendingBlinks"
       bookName="Beyond Entrepreneur 2.0"
       authorName="By Jim Collins and Bill Lazier"
       imgPath={beyondEntrepreneur}
