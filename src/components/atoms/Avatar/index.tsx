@@ -1,15 +1,18 @@
-import React from 'react'
-import { Avatar } from '@mui/material';
+import React from "react";
+import { Avatar } from "@mui/material";
 
-interface AvatarProps{
-    children:React.ReactNode
+interface AvatarProps {
+  children: React.ReactNode;
 }
-const index = (props:AvatarProps) => {
+const index = (props: AvatarProps) => {
   return (
-    <Avatar sx={{width:'40px', height:'40px',bgcolor:'#69A6E3'}}>
-        {props.children}
+    <Avatar
+      sx={{ width: "40px", height: "40px", bgcolor: "#69A6E3" }}
+      role="Avatar"
+    >
+      {props.children}
     </Avatar>
-  )
-}
+  );
+};
 
-export default index
+export default index;

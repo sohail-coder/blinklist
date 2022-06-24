@@ -15,7 +15,7 @@ import { Typography } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" role="parentContainer">
       <StyledEngineProvider injectFirst>
         <ThemeProvider theme={customTheme}>
           <BrowserRouter>

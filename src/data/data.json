@@ -11,12 +11,36 @@
       "icon1": "Image/Time.png",
       "icon2": "Image/Person.png",
       "cat": "TrendingBlinks"
+    },
+    {
+      "id": 10,
+      "finished": false,
+      "imgsrc": "/BookCovers/beingboss.png",
+      "bookName": "Being Boss",
+      "authorName": "Kathleen Shannon and Emily...",
+      "time": "13-minute read",
+      "nReads": "1.9k reads",
+      "icon1": "Image/Time.png",
+      "icon2": "Image/Person.png",
+      "cat": "TrendingBlinks"
+    },
+    {
+      "id": 2,
+      "finished": true,
+      "imgsrc": "/BookCovers/employee_to_entrepreneur.jpg",
+      "bookName": "Employee to Entrepreneur",
+      "authorName": "Steve Glaveski",
+      "time": "15-minute read",
+      "nReads": "1.9k reads",
+      "icon1": "Image/Time.png",
+      "icon2": "Image/Person.png",
+      "cat": "TrendingBlinks"
     }
   ],
   "TrendingBlinks": [
     {
       "id": 10,
-      "finished": true,
+      "finished": false,
       "imgsrc": "/BookCovers/beingboss.png",
       "bookName": "Being Boss",
       "authorName": "Kathleen Shannon and Emily...",
@@ -28,7 +52,7 @@
     },
     {
       "id": 11,
-      "finished": false,
+      "finished": true,
       "imgsrc": "/BookCovers/beyondentrepreneurship.png",
       "bookName": "Beyond Entrepreneurship",
       "authorName": "Jim Collins & Bill Lazier",
@@ -40,7 +64,7 @@
     },
     {
       "id": 2,
-      "finished": true,
+      "finished": false,
       "imgsrc": "/BookCovers/employee_to_entrepreneur.jpg",
       "bookName": "Employee to Entrepreneur",
       "authorName": "Steve Glaveski",
