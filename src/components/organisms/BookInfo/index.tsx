@@ -39,7 +39,7 @@ const Index = (props: BookInfoProps) => {
   };
 
   return (
-    <div role="BookInfo">
+    <div role="bookInfo">
       <CustomTypo
         variant="body2"
         component="div"

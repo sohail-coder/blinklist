@@ -26,6 +26,7 @@ const index = (props: CustomTypoProps) => {
       className={props.className}
       width={props.width}
       component={props.component}
+      role="Typography"
     >
       {props.children}
     </Typography>

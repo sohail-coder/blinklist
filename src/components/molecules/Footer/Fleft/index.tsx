@@ -15,7 +15,7 @@ const Index = () => {
         width: "378px",
         height: "120px",
       }}
-      role="footer-left"
+      data-testid="footer-left"
     >
       <Grid item sx={{ height: "24px", width: "100px" }}>
         <img src={BlinkList} />

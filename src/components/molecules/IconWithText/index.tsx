@@ -17,14 +17,6 @@ export interface IconTextProps {
 const index = ({ text, ColGap, Path, className }: IconTextProps) => {
   const Classes = customStyles();
   return (
-    // <div className={classes.time}>
-    //   {/* {props.icon} */}
-    //   {/* <div className={classes.iconText}/>{icon }<div/> */}
-
-    //   <Icon className={classes.iconText}>{icon}</Icon>
-    //   <CustomTypo variant='caption' component='div' children={text} className={classes.iconText}/>
-    // </div>
-
     <Grid
       container
       columnGap={ColGap}
@@ -33,8 +25,6 @@ const index = ({ text, ColGap, Path, className }: IconTextProps) => {
       data-testid="IconWithText"
     >
       <Grid item>
-        {/* <div className={classes.iconText}>{Icons}</div> */}
-        {/* <Icons className={`${Classes.iconText} ${className}`}/>  */}
         <img src={Path} />
       </Grid>
 
@@ -47,11 +37,6 @@ const index = ({ text, ColGap, Path, className }: IconTextProps) => {
         />
       </Grid>
     </Grid>
-
-    // <>
-    // <span><Icons className={`${Classes.iconCard} ${Classes.iconText}`}/> </span>
-    // <span><CustomTypo variant='caption' component='span' children={text} className={Classes.iconText}/></span>
-    // </>
   );
 };
 

@@ -1,4 +1,4 @@
-import BookInfo from "./Index";
+import BookInfo from ".";
 import beyondEntrepreneur from "../../../assets/BookCovers/beyondentrepreneurship.png";
 
 export default {

@@ -3,7 +3,7 @@ import Header from "../../organisms/Header";
 import Footer from "../../molecules/Footer";
 import Template from "../../templates/Template1";
 import { customStyles } from "../../../theme/mainTheme";
-import BookInfo from "../../organisms/BookInfo/Index";
+import BookInfo from "../../organisms/BookInfo";
 import { Box, Tab } from "@mui/material";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import CustomTypo from "../../atoms/CustomTypo";
@@ -19,10 +19,6 @@ const Index = () => {
   };
 
   const { id } = useParams();
-  // const data = id?.split("+");
-  // console.log(data[0]);
-  // console.log(data[1]);
-
   const params: any = id?.split("+");
   const [books, setBooks] = useState([] as any);
   const [cat, setCat] = useState("");
@@ -31,7 +27,6 @@ const Index = () => {
     axios.get(`http://localhost:8000/${params[0]}/${params[1]}`).then((res) => {
       setBooks(res.data);
       setCat(res.data.cat);
-      // console.log(res.data.cat);
     });
   };
 
