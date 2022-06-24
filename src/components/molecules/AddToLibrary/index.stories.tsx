@@ -6,5 +6,5 @@ export default {
 };
 
 export const card = () => {
-  return <AddtoLib handleClick={() => {}} />;
+  return <AddtoLib handleClick={() => console.log("Added to Lib")} />;
 };

@@ -31,14 +31,7 @@ const Index = () => {
   };
 
   useEffect(() => {
-    // axios.get(`http://localhost:8000/booklist/${id}`).then((res) => {
-    //   setBooks(res.data);
-    //   console.log(res.data);
-    //   console.log(books);
-    // });
     addData();
-    // addData({books.cat});
-    // console.log({ books });
   }, []);
 
   return (

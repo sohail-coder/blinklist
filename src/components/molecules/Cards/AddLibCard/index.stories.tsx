@@ -1,5 +1,4 @@
 import SingleLibCard from "./index";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
 import bringyourhuman from "../../../../assets/BookCovers/bringyourhumantowork.png";
 import { customStyles } from "../../../../theme/mainTheme";
 import Person from "../../../../assets/Image/Person.png";
@@ -11,10 +10,12 @@ export default {
 };
 
 export const card = () => {
-  const classes = customStyles();
   return (
     <SingleLibCard
-      handleClick={() => {}}
+      cat="TrendingBlinks"
+      handleClick={() => {
+        console.log("Button clicked");
+      }}
       id={0}
       imgsrc={bringyourhuman}
       bookName="Bring Your Human To Work"

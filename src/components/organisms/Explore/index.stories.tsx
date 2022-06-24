@@ -6,6 +6,11 @@ export default {
 };
 
 export const card = () => {
-  // const classes=customStyles();
-  return <Explore handleChange={() => {}} />;
+  return (
+    <Explore
+      handleChange={() => {
+        console.log("Button Clicked");
+      }}
+    />
+  );
 };

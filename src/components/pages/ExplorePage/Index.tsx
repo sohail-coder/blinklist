@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Footer from "../../molecules/Footer";
 import Header from "../../organisms/Header";
 import Template1 from "../../templates/Template1";
@@ -39,7 +39,7 @@ const Index = () => {
     });
   }, []);
 
-  const handleClick = (id: number, finished: boolean, cat: string) => {
+  const handleClick = (id: number, _finished: boolean, cat: string) => {
     console.log(id);
     console.log(cat);
 

@@ -9,7 +9,6 @@ import { customStyles } from "../../../../theme/mainTheme";
 import IconWithText from "../../IconWithText";
 import Buttons from "../../../atoms/Buttons/Buttons";
 import { BookInfo } from "../../../organisms/FunctionalGrid";
-import { StringMappingType } from "typescript";
 
 export interface CardsProps extends BookInfo {
   // cat: string;

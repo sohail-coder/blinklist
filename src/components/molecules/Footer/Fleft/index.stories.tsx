@@ -6,6 +6,5 @@ export default {
 };
 
 export const card = () => {
-  // const classes=customStyles();
   return <FooterLeft />;
 };

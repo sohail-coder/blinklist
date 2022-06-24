@@ -1,6 +1,5 @@
 import SingleCard from "./index";
 import bringyourhuman from "../../../../assets/BookCovers/bringyourhumantowork.png";
-import { customStyles } from "../../../../theme/mainTheme";
 import Person from "../../../../assets/Image/Person.png";
 import Time from "../../../../assets/Image/Time.png";
 
@@ -10,10 +9,12 @@ export default {
 };
 
 export const card = () => {
-  const classes = customStyles();
   return (
     <SingleCard
-      handleClick={() => {}}
+      cat="Trending Blinks"
+      handleClick={() => {
+        console.log("Button Clicked");
+      }}
       id={0}
       finished={false}
       imgsrc={bringyourhuman}

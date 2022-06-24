@@ -8,7 +8,12 @@ export default {
 } as ComponentMeta<typeof AvatarIcon>;
 
 const Template: ComponentStory<typeof AvatarIcon> = () => (
-  <AvatarIcon logClick={false} handleLogin={() => {}} />
+  <AvatarIcon
+    logClick={false}
+    handleLogin={() => {
+      console.log("Login Handler");
+    }}
+  />
 );
 
 export const AvatarDown = Template.bind({});

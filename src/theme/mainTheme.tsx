@@ -99,7 +99,7 @@ const customTheme = createTheme({
 });
 export default customTheme;
 
-var customStyles = makeStyles({
+const customStyles = makeStyles({
   time: {
     display: "flex",
     justifyContent: "flex-start",
