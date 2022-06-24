@@ -1,6 +1,5 @@
 import SingleLibCard from "./index";
 import bringyourhuman from "../../../../assets/BookCovers/bringyourhumantowork.png";
-import { customStyles } from "../../../../theme/mainTheme";
 import Person from "../../../../assets/Image/Person.png";
 import Time from "../../../../assets/Image/Time.png";
 
