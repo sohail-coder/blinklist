@@ -23,6 +23,30 @@
       "icon1": "Image/Time.png",
       "icon2": "Image/Person.png",
       "cat": "TrendingBlinks"
+    },
+    {
+      "id": 5,
+      "finished": false,
+      "imgsrc": "/BookCovers/livesofthestoics.png",
+      "bookName": "Lives of the Stoics",
+      "authorName": "Ryan Holiday, Stephen Hansel",
+      "time": "13-minute read",
+      "nReads": "1.9k reads",
+      "icon1": "Image/Time.png",
+      "icon2": "Image/Person.png",
+      "cat": "TrendingBlinks"
+    },
+    {
+      "id": 9,
+      "finished": true,
+      "imgsrc": "/BookCovers/dropshipping.png",
+      "bookName": "Dropshipping",
+      "authorName": "James Moore",
+      "time": "12-minute read",
+      "nReads": "1.9k reads",
+      "icon1": "Image/Time.png",
+      "icon2": "Image/Person.png",
+      "cat": "JustAdded"
     }
   ],
   "TrendingBlinks": [

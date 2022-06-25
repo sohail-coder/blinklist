@@ -1,8 +1,10 @@
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function LoginPage() {
+  const { loginWithRedirect } = useAuth0();
   return (
     <Grid
       container
@@ -28,10 +30,7 @@ export default function LoginPage() {
         <Typography variant="h2">Welcome!!</Typography>
       </Grid>
       <Grid item container direction="column" sx={{ width: "25%" }}>
-        <Button
-          variant="contained"
-          // onClick={() => loginWithRedirect()}
-        >
+        <Button variant="contained" onClick={() => loginWithRedirect()}>
           Login
         </Button>
       </Grid>
@@ -39,7 +38,7 @@ export default function LoginPage() {
         <Button
           variant="contained"
           color="primary"
-          // onClick={() => loginWithRedirect({ screen_hint: "signup" })}
+          onClick={() => loginWithRedirect({ screen_hint: "signup" })}
         >
           Signup
         </Button>

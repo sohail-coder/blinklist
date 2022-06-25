@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@material-ui/core": "^4.12.4",
@@ -33,6 +34,7 @@
   },
   "scripts": {
     "dev": "webpack serve",
+    "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -87,6 +89,7 @@
     "json-loader": "^0.5.7",
     "prop-types": "^15.8.1",
     "react-test-renderer": "^18.2.0",
+    "sonar-scanner": "^3.1.0",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.2"
