@@ -3,5 +3,5 @@ projectKey=blinklist12
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.29861
 dashboardUrl=https://sonarcloud.io/dashboard?id=blinklist12
-ceTaskId=AYGfp040SITACoMzIRUM
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYGfp040SITACoMzIRUM
+ceTaskId=AYGfq_WW6OAImYWsfZyd
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYGfq_WW6OAImYWsfZyd
