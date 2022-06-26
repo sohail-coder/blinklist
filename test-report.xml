@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/Header/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/pages/ExplorePage/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/RFCard/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Buttons/Buttons.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/CardsGrid/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/atoms/CustomTypo/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/pages/Landing Page/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/AddLibCard/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/BookInfo/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/AvatarWithIcon/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/AddToLibrary/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/Explore/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx">
+    <testCase name=" to check LoginPage name " duration="377"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/IconWithText/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/templates/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/Banner.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fleft/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fright/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/Bleft/index.test.tsx">
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Avatar/__test__/index.test.tsx">
+    <testCase name="This is avatar rendering Avatar" duration="14"/>
+    <testCase name="This is avatar Text in Avatar" duration="2"/>
+    <testCase name="This is avatar No focus" duration="1"/>
+  </file>
+</testExecutions>
