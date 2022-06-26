@@ -37,7 +37,7 @@
     "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage --watchAll=false --testResultsProcessor=jest-sonar-reporter",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook"
