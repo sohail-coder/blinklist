@@ -1,5 +1,4 @@
 import axios from "axios";
-import React from "react";
 import CardGrid from "../CardsGrid";
 
 export interface BookInfo {
@@ -28,16 +27,9 @@ const Index = ({ books, fetchRecords }: FunctionalGridProps) => {
         finished: !finish,
       }
     );
-    console.log(response1.data);
     if (response1.data) {
       fetchRecords();
     }
-
-    const response2 = await axios.get("http://localhost:8000/booklist");
-    console.log(response2.data);
-
-    console.log("handleclick");
-    console.log(books);
   };
 
   return (

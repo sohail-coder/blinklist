@@ -1,90 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Buttons/__test__/Buttons.test.tsx">
-    <testCase name="Testing Button Atom Rendering the button" duration="12"/>
-    <testCase name="Testing Button Atom button with test" duration="3"/>
-    <testCase name="button with outlined" duration="187"/>
-    <testCase name="button with text" duration="69"/>
-    <testCase name="button with contained" duration="114"/>
-    <testCase name="button with event" duration="68"/>
-    <testCase name="with icon" duration="78"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx">
+    <testCase name="testing login rendering loginpage" duration="301"/>
+    <testCase name="testing login rendering the login button" duration="240"/>
+    <testCase name="testing login rendering the signup button" duration="104"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/atoms/CustomTypo/__test__/index.test.tsx">
-    <testCase name="rendering Typography" duration="80"/>
-    <testCase name="rendering Typography with heading" duration="17"/>
-    <testCase name="rendering Typography with heading3" duration="10"/>
-    <testCase name="rendering Typography with subtitle2" duration="12"/>
+    <testCase name="rendering Typography" duration="72"/>
+    <testCase name="rendering Typography with heading" duration="37"/>
+    <testCase name="rendering Typography with heading3" duration="7"/>
+    <testCase name="rendering Typography with subtitle2" duration="11"/>
     <testCase name="rendering Typography with body1" duration="8"/>
     <testCase name="rendering Typography with subtitle1" duration="10"/>
-    <testCase name="rendering Typography with body2" duration="15"/>
-    <testCase name="rendering Typography with caption" duration="14"/>
-    <testCase name="rendering Typography with button" duration="10"/>
+    <testCase name="rendering Typography with body2" duration="10"/>
+    <testCase name="rendering Typography with caption" duration="10"/>
+    <testCase name="rendering Typography with button" duration="11"/>
     <testCase name="rendering Typography with overline" duration="10"/>
-    <testCase name="rendering Typography with subtitle5" duration="9"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/AddLibCard/__test__/index.test.tsx">
-    <testCase name="AddLibCard should render AddLibCard element" duration="312"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/RFCard/__test__/index.test.tsx">
-    <testCase name="card is testing" duration="430"/>
+    <testCase name="rendering Typography with subtitle5" duration="8"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/organisms/CardsGrid/__test__/index.test.tsx">
-    <testCase name="Cards Grid rendering" duration="460"/>
+    <testCase name="Cards Grid rendering" duration="429"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/AddToLibrary/__test__/index.test.tsx">
-    <testCase name="Adding to Library Button" duration="153"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/FunctionalGrid/__test__/index.test.tsx">
+    <testCase name="FunctionalGrid should render FunctionalGrid element with finished button" duration="367"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/RFCard/__test__/index.test.tsx">
+    <testCase name="card is testing" duration="294"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/AvatarWithIcon/__test__/index.test.tsx">
-    <testCase name="Testing Avatar with icon" duration="159"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/organisms/BookInfo/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="488"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/organisms/Explore/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="594"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/IconWithText/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="97"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/templates/__test__/index.test.tsx">
-    <testCase name="Rendering Template" duration="126"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fleft/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="90"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/__test__/Banner.test.tsx">
-    <testCase name="Banner Check" duration="169"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx">
-    <testCase name=" to check LoginPage name " duration="163"/>
+    <testCase name="Testing Avatar with icon" duration="223"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fright/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="193"/>
+    <testCase name="rendering the component" duration="169"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/BookInfo/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="486"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/templates/__test__/index.test.tsx">
+    <testCase name="Rendering Template" duration="159"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/__test__/Banner.test.tsx">
+    <testCase name="Banner Check" duration="128"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fleft/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="104"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/Explore/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="767"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/AddLibCard/__test__/index.test.tsx">
+    <testCase name="AddLibCard should render AddLibCard element" duration="275"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="270"/>
+    <testCase name="rendering the component" duration="326"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/Bleft/__test__/index.test.tsx">
-    <testCase name="left side banner" duration="94"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/IconWithText/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="125"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/AddToLibrary/__test__/index.test.tsx">
+    <testCase name="Adding to Library Button" duration="208"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/atoms/Avatar/__test__/index.test.tsx">
     <testCase name="This is avatar rendering Avatar" duration="6"/>
-    <testCase name="This is avatar Text in Avatar" duration="1"/>
+    <testCase name="This is avatar Text in Avatar" duration="2"/>
     <testCase name="This is avatar No focus" duration="1"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/organisms/Header/__test__/index.test.tsx">
-    <testCase name="Header should render Header element without Explore popup" duration="633"/>
-    <testCase name="Header should render Header element with Explore popup" duration="459"/>
-    <testCase name="Header Libray Button Testing" duration="341"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Buttons/__test__/Buttons.test.tsx">
+    <testCase name="Testing Button Atom Rendering the button" duration="15"/>
+    <testCase name="Testing Button Atom button with test" duration="2"/>
+    <testCase name="button with outlined" duration="166"/>
+    <testCase name="button with text" duration="32"/>
+    <testCase name="button with contained" duration="65"/>
+    <testCase name="button with event" duration="57"/>
+    <testCase name="with icon" duration="49"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/pages/ExplorePage/__test__/index.test.tsx">
-    <testCase name="ExplorePage rendering the  ExplorePage" duration="905"/>
-    <testCase name="ExplorePage rendering the  ExplorePage with popup" duration="639"/>
-    <testCase name="ExplorePage rendering the  ExplorePage with LibButton" duration="417"/>
-    <testCase name="ExplorePage AddtoLib" duration="457"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/Bleft/__test__/index.test.tsx">
+    <testCase name="left side banner" duration="92"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/Header/__test__/index.test.tsx">
+    <testCase name="Header should render Header element without Explore popup" duration="683"/>
+    <testCase name="Header should render Header element with Explore popup" duration="551"/>
+    <testCase name="Header Libray Button Testing" duration="448"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/pages/Landing Page/__test__/index.test.tsx">
-    <testCase name="LandingPage rendering Landing Page" duration="601"/>
-    <testCase name="LandingPage rendering Landing Page with readagain" duration="518"/>
+    <testCase name="LandingPage rendering Landing Page" duration="946"/>
+    <testCase name="LandingPage rendering Landing Page with readagain" duration="505"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/pages/ExplorePage/__test__/index.test.tsx">
+    <testCase name="ExplorePage rendering the  ExplorePage" duration="890"/>
+    <testCase name="ExplorePage rendering the  ExplorePage with popup" duration="768"/>
+    <testCase name="ExplorePage rendering the  ExplorePage with LibButton" duration="477"/>
+    <testCase name="ExplorePage AddtoLib" duration="458"/>
   </file>
 </testExecutions>
