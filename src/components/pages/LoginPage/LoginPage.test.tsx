@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import LoginPage from "./LoginPage";
 import "@testing-library/jest-dom";
-// import { Auth0Provider } from "@auth0/auth0-react";
 
 const MockLoginPage = () => {
   return <LoginPage />;
@@ -26,5 +25,12 @@ describe("testing login", () => {
     expect(button).toBeInTheDocument();
     expect(button).toHaveClass("MuiButton-contained");
     expect(button).toHaveTextContent("Signup");
+  });
+  test("rendering the typography", () => {
+    render(<MockLoginPage />);
+    const button = screen.getByText("Welcome!!");
+    expect(button).toBeInTheDocument();
+    expect(button).toHaveClass("MuiTypography-h2");
+    expect(button).toHaveTextContent("Welcome!!");
   });
 });

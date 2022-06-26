@@ -1,95 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx">
-    <testCase name="testing login rendering loginpage" duration="301"/>
-    <testCase name="testing login rendering the login button" duration="240"/>
-    <testCase name="testing login rendering the signup button" duration="104"/>
+    <testCase name="testing login rendering loginpage" duration="412">
+      <failure message="Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`."><![CDATA[Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`.
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79197
+    at new e (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79512)
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:241:11
+    at mountState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16852:20)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:17593:16)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:1620:21)
+    at Auth0Provider (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:240:20)
+    at renderWithHooks (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16175:18)
+    at mountIndeterminateComponent (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:20913:13)
+    at beginWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:22416:16)
+    at beginWork$1 (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:27381:14)
+    at performUnitOfWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26516:12)
+    at workLoopSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26422:5)
+    at renderRootSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26390:7)
+    at recoverFromConcurrentError (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25806:20)
+    at performConcurrentWorkOnRoot (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25706:22)
+    at flushActQueue (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2665:24)
+    at act (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2580:11)
+    at /home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx:19:5)
+    at Promise.then.completed (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+    <testCase name="testing login rendering the login button" duration="26">
+      <failure message="Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`."><![CDATA[Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`.
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79197
+    at new e (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79512)
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:241:11
+    at mountState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16852:20)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:17593:16)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:1620:21)
+    at Auth0Provider (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:240:20)
+    at renderWithHooks (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16175:18)
+    at mountIndeterminateComponent (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:20913:13)
+    at beginWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:22416:16)
+    at beginWork$1 (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:27381:14)
+    at performUnitOfWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26516:12)
+    at workLoopSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26422:5)
+    at renderRootSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26390:7)
+    at recoverFromConcurrentError (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25806:20)
+    at performConcurrentWorkOnRoot (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25706:22)
+    at flushActQueue (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2665:24)
+    at act (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2580:11)
+    at /home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx:24:5)
+    at Promise.then.completed (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+    <testCase name="testing login rendering the signup button" duration="21">
+      <failure message="Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`."><![CDATA[Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`.
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79197
+    at new e (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79512)
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:241:11
+    at mountState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16852:20)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:17593:16)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:1620:21)
+    at Auth0Provider (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:240:20)
+    at renderWithHooks (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16175:18)
+    at mountIndeterminateComponent (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:20913:13)
+    at beginWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:22416:16)
+    at beginWork$1 (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:27381:14)
+    at performUnitOfWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26516:12)
+    at workLoopSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26422:5)
+    at renderRootSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26390:7)
+    at recoverFromConcurrentError (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25806:20)
+    at performConcurrentWorkOnRoot (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25706:22)
+    at flushActQueue (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2665:24)
+    at act (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2580:11)
+    at /home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx:34:5)
+    at Promise.then.completed (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
+    <testCase name="testing login rendering the typography" duration="22">
+      <failure message="Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`."><![CDATA[Error: For security reasons, `window.crypto` is required to run `auth0-spa-js`.
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79197
+    at new e (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/node_modules/@auth0/auth0-spa-js/dist/auth0-spa-js.production.esm.js:15:79512)
+    at /home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:241:11
+    at mountState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16852:20)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:17593:16)
+    at Object.useState (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:1620:21)
+    at Auth0Provider (/home/sohails/child_parent_assignment/node_modules/@auth0/auth0-react/src/auth0-provider.tsx:240:20)
+    at renderWithHooks (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:16175:18)
+    at mountIndeterminateComponent (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:20913:13)
+    at beginWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:22416:16)
+    at beginWork$1 (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:27381:14)
+    at performUnitOfWork (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26516:12)
+    at workLoopSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26422:5)
+    at renderRootSync (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:26390:7)
+    at recoverFromConcurrentError (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25806:20)
+    at performConcurrentWorkOnRoot (/home/sohails/child_parent_assignment/node_modules/react-dom/cjs/react-dom.development.js:25706:22)
+    at flushActQueue (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2665:24)
+    at act (/home/sohails/child_parent_assignment/node_modules/react/cjs/react.development.js:2580:11)
+    at /home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/act-compat.js:63:25
+    at renderRoot (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:159:26)
+    at render (/home/sohails/child_parent_assignment/node_modules/@testing-library/react/dist/pure.js:246:10)
+    at Object.<anonymous> (/home/sohails/child_parent_assignment/src/components/pages/LoginPage/LoginPage.test.tsx:43:5)
+    at Promise.then.completed (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at _runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+    at Object.worker (/home/sohails/child_parent_assignment/node_modules/react-scripts/node_modules/jest-runner/build/testWorker.js:133:12)]]></failure>
+    </testCase>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/atoms/CustomTypo/__test__/index.test.tsx">
-    <testCase name="rendering Typography" duration="72"/>
-    <testCase name="rendering Typography with heading" duration="37"/>
-    <testCase name="rendering Typography with heading3" duration="7"/>
+    <testCase name="rendering Typography" duration="92"/>
+    <testCase name="rendering Typography with heading" duration="15"/>
+    <testCase name="rendering Typography with heading3" duration="10"/>
     <testCase name="rendering Typography with subtitle2" duration="11"/>
-    <testCase name="rendering Typography with body1" duration="8"/>
-    <testCase name="rendering Typography with subtitle1" duration="10"/>
-    <testCase name="rendering Typography with body2" duration="10"/>
-    <testCase name="rendering Typography with caption" duration="10"/>
-    <testCase name="rendering Typography with button" duration="11"/>
-    <testCase name="rendering Typography with overline" duration="10"/>
+    <testCase name="rendering Typography with body1" duration="15"/>
+    <testCase name="rendering Typography with subtitle1" duration="9"/>
+    <testCase name="rendering Typography with body2" duration="9"/>
+    <testCase name="rendering Typography with caption" duration="8"/>
+    <testCase name="rendering Typography with button" duration="10"/>
+    <testCase name="rendering Typography with overline" duration="9"/>
     <testCase name="rendering Typography with subtitle5" duration="8"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/organisms/CardsGrid/__test__/index.test.tsx">
-    <testCase name="Cards Grid rendering" duration="429"/>
+    <testCase name="Cards Grid rendering" duration="444"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/organisms/FunctionalGrid/__test__/index.test.tsx">
-    <testCase name="FunctionalGrid should render FunctionalGrid element with finished button" duration="367"/>
+    <testCase name="FunctionalGrid should render FunctionalGrid element with finished button" duration="417"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/RFCard/__test__/index.test.tsx">
-    <testCase name="card is testing" duration="294"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/AvatarWithIcon/__test__/index.test.tsx">
-    <testCase name="Testing Avatar with icon" duration="223"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fright/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="169"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/organisms/BookInfo/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="486"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/templates/__test__/index.test.tsx">
-    <testCase name="Rendering Template" duration="159"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/__test__/Banner.test.tsx">
-    <testCase name="Banner Check" duration="128"/>
-  </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fleft/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="104"/>
+    <testCase name="card is testing" duration="305"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/organisms/Explore/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="767"/>
+    <testCase name="rendering the component" duration="597"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/AddLibCard/__test__/index.test.tsx">
-    <testCase name="AddLibCard should render AddLibCard element" duration="275"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/organisms/BookInfo/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="422"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/__test__/Banner.test.tsx">
+    <testCase name="Banner Check" duration="155"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/AvatarWithIcon/__test__/index.test.tsx">
+    <testCase name="Testing Avatar with icon" duration="130"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="326"/>
+    <testCase name="rendering the component" duration="256"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fright/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="223"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/IconWithText/__test__/index.test.tsx">
-    <testCase name="rendering the component" duration="125"/>
+    <testCase name="rendering the component" duration="122"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/AddToLibrary/__test__/index.test.tsx">
-    <testCase name="Adding to Library Button" duration="208"/>
+    <testCase name="Adding to Library Button" duration="134"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Avatar/__test__/index.test.tsx">
-    <testCase name="This is avatar rendering Avatar" duration="6"/>
-    <testCase name="This is avatar Text in Avatar" duration="2"/>
-    <testCase name="This is avatar No focus" duration="1"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Footer/Fleft/__test__/index.test.tsx">
+    <testCase name="rendering the component" duration="127"/>
   </file>
-  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Buttons/__test__/Buttons.test.tsx">
-    <testCase name="Testing Button Atom Rendering the button" duration="15"/>
-    <testCase name="Testing Button Atom button with test" duration="2"/>
-    <testCase name="button with outlined" duration="166"/>
-    <testCase name="button with text" duration="32"/>
-    <testCase name="button with contained" duration="65"/>
-    <testCase name="button with event" duration="57"/>
-    <testCase name="with icon" duration="49"/>
+  <file path="/home/sohails/child_parent_assignment/src/components/templates/__test__/index.test.tsx">
+    <testCase name="Rendering Template" duration="125"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/molecules/Cards/AddLibCard/__test__/index.test.tsx">
+    <testCase name="AddLibCard should render AddLibCard element" duration="347"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/molecules/Banner/Bleft/__test__/index.test.tsx">
-    <testCase name="left side banner" duration="92"/>
+    <testCase name="left side banner" duration="116"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Buttons/__test__/Buttons.test.tsx">
+    <testCase name="Testing Button Atom Rendering the button" duration="7"/>
+    <testCase name="Testing Button Atom button with test" duration="2"/>
+    <testCase name="button with outlined" duration="82"/>
+    <testCase name="button with text" duration="57"/>
+    <testCase name="button with contained" duration="74"/>
+    <testCase name="button with event" duration="87"/>
+    <testCase name="with icon" duration="54"/>
+  </file>
+  <file path="/home/sohails/child_parent_assignment/src/components/atoms/Avatar/__test__/index.test.tsx">
+    <testCase name="This is avatar rendering Avatar" duration="10"/>
+    <testCase name="This is avatar Text in Avatar" duration="1"/>
+    <testCase name="This is avatar No focus" duration="1"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/organisms/Header/__test__/index.test.tsx">
-    <testCase name="Header should render Header element without Explore popup" duration="683"/>
-    <testCase name="Header should render Header element with Explore popup" duration="551"/>
-    <testCase name="Header Libray Button Testing" duration="448"/>
+    <testCase name="Header should render Header element without Explore popup" duration="869"/>
+    <testCase name="Header should render Header element with Explore popup" duration="413"/>
+    <testCase name="Header Libray Button Testing" duration="355"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/pages/Landing Page/__test__/index.test.tsx">
-    <testCase name="LandingPage rendering Landing Page" duration="946"/>
-    <testCase name="LandingPage rendering Landing Page with readagain" duration="505"/>
+    <testCase name="LandingPage rendering Landing Page" duration="754"/>
+    <testCase name="LandingPage rendering Landing Page with readagain" duration="585"/>
   </file>
   <file path="/home/sohails/child_parent_assignment/src/components/pages/ExplorePage/__test__/index.test.tsx">
-    <testCase name="ExplorePage rendering the  ExplorePage" duration="890"/>
-    <testCase name="ExplorePage rendering the  ExplorePage with popup" duration="768"/>
-    <testCase name="ExplorePage rendering the  ExplorePage with LibButton" duration="477"/>
-    <testCase name="ExplorePage AddtoLib" duration="458"/>
+    <testCase name="ExplorePage rendering the  ExplorePage" duration="780"/>
+    <testCase name="ExplorePage rendering the  ExplorePage with popup" duration="681"/>
+    <testCase name="ExplorePage rendering the  ExplorePage with LibButton" duration="587"/>
+    <testCase name="ExplorePage AddtoLib" duration="404"/>
   </file>
 </testExecutions>
