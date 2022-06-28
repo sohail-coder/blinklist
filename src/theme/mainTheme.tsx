@@ -104,31 +104,38 @@ const customStyles = makeStyles({
     display: "flex",
     justifyContent: "flex-start",
     columnGap: "6px",
+    fontFamily: "Cera Pro",
   },
   bannerImage: {
     height: "230px",
     width: "249px",
     margin: "17px",
+    fontFamily: "Cera Pro",
   },
   explorecontent: {
     width: "461px",
     height: "69px",
     color: "#6D787E",
+    fontFamily: "Cera Pro",
   },
   exploretitle: {
     color: "#03314B",
     width: "319px",
+    fontFamily: "Cera Pro",
   },
   timeIcon: {
     width: "16.67px",
     height: "16.67px",
+    fontFamily: "Cera Pro",
   },
   personIcon: {
     width: "13.33px",
     height: "17.7px",
+    fontFamily: "Cera Pro",
   },
   iconText: {
     color: "#6D787E",
+    fontFamily: "Cera Pro",
   },
   bookTitle: {
     fontSize: "18px",
@@ -136,12 +143,14 @@ const customStyles = makeStyles({
     lineHeight: "22.63px",
     color: "#03314B",
     marginBottom: "16px",
+    fontFamily: "Cera Pro",
   },
   bookAuthor: {
     fontWeight: 500,
     color: "#6D787E",
     lineHeight: "20.11px",
     marginBottom: "16px",
+    fontFamily: "Cera Pro",
   },
   buttonstyle: {
     textTransform: "none",
@@ -157,6 +166,7 @@ const customStyles = makeStyles({
     borderRadius: "4px",
     width: "122px",
     height: "44px",
+    fontFamily: "Cera Pro",
   },
   finishedReading: {
     background: "#2CE080;",
@@ -164,6 +174,8 @@ const customStyles = makeStyles({
     width: "170px",
     height: "44px",
     color: "#03314B",
+    fontFamily: "Cera Pro",
+
     "&:hover": {
       background: "#00C263",
     },
@@ -174,6 +186,7 @@ const customStyles = makeStyles({
     width: "151px",
     fontWeight: 400,
     height: "44px",
+    fontFamily: "Cera Pro",
   },
   addToLib: {
     background: "#FFF",
@@ -183,6 +196,8 @@ const customStyles = makeStyles({
     textTransform: "none",
     width: "284px",
     fontWeight: 500,
+    fontFamily: "Cera Pro",
+
     height: "52px",
     "&:hover": {
       backgroundColor: "#0365F2",
@@ -194,16 +209,20 @@ const customStyles = makeStyles({
     border: "1px solid #E1ECFC",
     borderRadius: "8px",
     width: "284px",
+    fontFamily: "Cera Pro",
   },
   bookInfo: {
     color: "#03314B",
+    fontFamily: "Cera Pro",
   },
   footer: {
     width: "542px",
     height: "224px",
+    fontFamily: "Cera Pro",
   },
   footerLeft: {
     color: "#0365F2",
+    fontFamily: "Cera Pro",
   },
   fullFooter: {
     height: "370px",
@@ -211,6 +230,7 @@ const customStyles = makeStyles({
     background: "#F1F6F4",
     alignItems: "center",
     justifyContent: "center",
+    fontFamily: "Cera Pro",
   },
   cardReadagain: {
     color: "#0365F2",
@@ -218,6 +238,7 @@ const customStyles = makeStyles({
     textTransform: "none",
     width: "100px",
     height: "20px",
+    fontFamily: "Cera Pro",
   },
   finished: {
     color: "#0365F2",
@@ -225,25 +246,32 @@ const customStyles = makeStyles({
     textTransform: "none",
     width: "62px",
     height: "20px",
+    fontFamily: "Cera Pro",
   },
   timerIcon: {
     width: "125px",
     height: "20px",
+    fontFamily: "Cera Pro",
   },
   personIcons: {
     width: "88px",
     height: "20px",
+    fontFamily: "Cera Pro",
   },
   IconGrid: {
     display: "flex",
     columnGap: "44px",
+    fontFamily: "Cera Pro",
   },
   myLibrary: {
     color: "#03314B",
     marginBottom: "60px",
+    fontFamily: "Cera Pro",
   },
   exploreHover: {
     color: "#6D787E",
+    fontFamily: "Cera Pro",
+
     textTransform: "none",
     "& .MuiButton-startIcon": {
       color: "#042330",
@@ -257,6 +285,8 @@ const customStyles = makeStyles({
   },
   exploreTop: {
     color: "#6D787E",
+    fontFamily: "Cera Pro",
+
     "&:hover": {
       color: "#116BE9",
     },
@@ -270,10 +300,12 @@ const customStyles = makeStyles({
     height: "398px",
     top: "60px",
     background: "#F1F6F4",
+    fontFamily: "Cera Pro",
   },
   trendingBooks: {
     color: "#03314B",
     marginBottom: "25px",
+    fontFamily: "Cera Pro",
   },
 });
 export { customStyles };

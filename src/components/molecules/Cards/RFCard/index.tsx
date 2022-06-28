@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import { Grid } from "@mui/material";
 import CustomTypo from "../../../atoms/CustomTypo";
 import { customStyles } from "../../../../theme/mainTheme";
-import IconWithText from "../../IconWithText";
+import IconWithText from "../../IconWithText/Index";
 import Buttons from "../../../atoms/Buttons/Buttons";
 import { BookInfo } from "../../../organisms/FunctionalGrid";
 

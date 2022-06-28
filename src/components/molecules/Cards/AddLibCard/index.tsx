@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CustomTypo from "../../../atoms/CustomTypo";
 import { customStyles } from "../../../../theme/mainTheme";
-import IconWithText from "../../IconWithText";
+import IconWithText from "../../IconWithText/Index";
 import AddToLibrary from "../../AddToLibrary";
 
 export interface CardsProps {

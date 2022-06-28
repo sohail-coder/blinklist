@@ -1,7 +1,7 @@
 import SingleLibCard from "./index";
 import bringyourhuman from "../../../../assets/BookCovers/bringyourhumantowork.png";
-import Person from "../../../../assets/Image/Person.png";
-import Time from "../../../../assets/Image/Time.png";
+import Person from "../../../../assets/person.jpg";
+import Time from "../../../../assets/Time.png";
 
 export default {
   title: "organisms/Card/LibCard",

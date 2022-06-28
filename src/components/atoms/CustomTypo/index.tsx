@@ -22,6 +22,7 @@ interface CustomTypoProps {
 const index = (props: CustomTypoProps) => {
   return (
     <Typography
+      fontFamily="Cera Pro"
       variant={props.variant}
       className={props.className}
       width={props.width}

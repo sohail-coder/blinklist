@@ -10,12 +10,14 @@ import SvgIcon from "@mui/material/SvgIcon";
 import { ReactComponent as SearchIcon } from "../../../assets/SearchIcon.svg";
 import ExploreDrop from "../Explore/index";
 import { useNavigate } from "react-router-dom";
-
+import { useAuth0 } from "@auth0/auth0-react";
+import Tooltip from "@mui/material/Tooltip";
 const Index = () => {
   const [clicked, handler] = useState(false);
   const navigate = useNavigate();
   const classes = customStyles();
-  const [logClick, handleLogin] = useState(true);
+  const [logClick] = useState(true);
+  const { logout } = useAuth0();
 
   return (
     <Grid
@@ -47,11 +49,10 @@ const Index = () => {
           sx={{ width: "auto", display: "flex", alignItems: "center" }}
         >
           <Grid item sx={{ height: "24px", width: "100px" }}>
-            <img src={BlinkList} />
+            <img src={BlinkList} alt="logo" />
           </Grid>
 
           <Grid item sx={{ display: "flex", alignItems: "center" }}>
-            {/* <SearchIcon sx={{ width: "20.31px", height: "20.31px" }} /> */}
             <SvgIcon
               component={SearchIcon}
               sx={{ width: "20.31px", height: "20.31px" }}
@@ -102,10 +103,14 @@ const Index = () => {
         </Grid>
 
         <Grid item>
-          <AvatarWithIcon
-            logClick={logClick}
-            handleLogin={() => handleLogin(!logClick)}
-          />
+          <Tooltip title="Logout">
+            <span onClick={() => logout({ returnTo: window.location.origin })}>
+              <AvatarWithIcon
+                logClick={logClick}
+                handleLogin={() => console.log("logout clicked")}
+              />
+            </span>
+          </Tooltip>
         </Grid>
       </Grid>
 
@@ -118,35 +123,6 @@ const Index = () => {
         <ExploreDrop handleChange={() => navigate("/explorePage")} />
       </Grid>
     </Grid>
-
-    // <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
-    //   <BlinkList />
-    //   <SvgIcon
-    //     component={SearchIcon}
-    //     sx={{ width: "20.31px", height: "20.31px" }}
-    //   />
-    //   <Buttons
-    //     variant="text"
-    //     endIcon={<KeyboardArrowDownIcon />}
-    //     sx={{
-    //       width: "79px",
-    //       height: "20px",
-    //       textTransform: "none",
-    //       color: "#03314B",
-    //       fontSize: "16px",
-    //     }}
-    //   >
-    //     Explore
-    //   </Buttons>
-
-    //   <CustomTypo
-    //     variant="body2"
-    //     component="div"
-    //     children="My Library"
-    //     className={classes.bookInfo}
-    //   />
-    //   <AvatarWithIcon />
-    // </Box>
   );
 };
 

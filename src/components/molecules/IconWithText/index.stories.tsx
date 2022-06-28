@@ -1,6 +1,6 @@
-import IconText from "./index";
+import IconText from "./Index";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Time from "../../../assets/Image/Time.png";
+import Time from "../../../assets/Time.png";
 
 export default {
   title: "molecules/IconText",
